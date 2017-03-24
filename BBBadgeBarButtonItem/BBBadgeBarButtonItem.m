@@ -117,12 +117,14 @@
 - (void)removeBadge
 {
     // Animate badge removal
-    [UIView animateWithDuration:0.2 animations:^{
-        self.badge.transform = CGAffineTransformMakeScale(0, 0);
-    } completion:^(BOOL finished) {
-        [self.badge removeFromSuperview];
-        self.badge = nil;
-    }];
+//    [UIView animateWithDuration:0.2 animations:^{
+//        self.badge.transform = CGAffineTransformMakeScale(0, 0);
+//    } completion:^(BOOL finished) {
+//        [self.badge removeFromSuperview];
+//        self.badge = nil;
+//    }];
+    [self.badge removeFromSuperview];
+    self.badge = nil;
 }
 
 #pragma mark - Setters
